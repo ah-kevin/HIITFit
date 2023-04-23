@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C411B29F41799004624F9 /* ExerciseView.swift */; };
+		C3026A5A29F545ED00E2D082 /* HellloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3026A5929F545ED00E2D082 /* HellloView.swift */; };
 		C30B6D3C29F522170079579E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3B29F522170079579E /* HeaderView.swift */; };
 		C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3D29F5249C0079579E /* Exercise.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		0A3C411B29F41799004624F9 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		C3026A5929F545ED00E2D082 /* HellloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellloView.swift; sourceTree = "<group>"; };
 		C30B6D3B29F522170079579E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C30B6D3D29F5249C0079579E /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = Views/Exercise.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +59,7 @@
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				0A3C411B29F41799004624F9 /* ExerciseView.swift */,
 				C30B6D3B29F522170079579E /* HeaderView.swift */,
+				C3026A5929F545ED00E2D082 /* HellloView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */,
+				C3026A5A29F545ED00E2D082 /* HellloView.swift in Sources */,
 				CD30C94025147A8C0049DB93 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
