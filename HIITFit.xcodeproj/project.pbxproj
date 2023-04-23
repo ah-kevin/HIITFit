@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C411B29F41799004624F9 /* ExerciseView.swift */; };
+		0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0529F562070046DBFA /* RatingView.swift */; };
+		0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */; };
 		C3026A5A29F545ED00E2D082 /* HellloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3026A5929F545ED00E2D082 /* HellloView.swift */; };
 		C30B6D3C29F522170079579E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3B29F522170079579E /* HeaderView.swift */; };
 		C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3D29F5249C0079579E /* Exercise.swift */; };
@@ -25,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		0A3C411B29F41799004624F9 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		0AD8BB0529F562070046DBFA /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIdeoPlayerView.swift; sourceTree = "<group>"; };
 		C3026A5929F545ED00E2D082 /* HellloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellloView.swift; sourceTree = "<group>"; };
 		C30B6D3B29F522170079579E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C30B6D3D29F5249C0079579E /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Exercise.swift; path = Views/Exercise.swift; sourceTree = "<group>"; };
@@ -58,6 +62,8 @@
 			children = (
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				0A3C411B29F41799004624F9 /* ExerciseView.swift */,
+				0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */,
+				0AD8BB0529F562070046DBFA /* RatingView.swift */,
 				C30B6D3B29F522170079579E /* HeaderView.swift */,
 				C3026A5929F545ED00E2D082 /* HellloView.swift */,
 			);
@@ -191,8 +197,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */,
+				0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */,
 				C30B6D3C29F522170079579E /* HeaderView.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
+				0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */,
