@@ -10,9 +10,9 @@ import SwiftUI
 
 struct HistoryView: View {
     @Binding var showHistory : Bool
+    @EnvironmentObject var history:HistoryStore
     let today = Date()
     let yesterday = Date().addingTimeInterval(-86400)
-    let history = HistoryStore()
     let exercises1 = ["Squat", "Step Up", "Burpee", "Sun Salute"]
     let exercises2 = ["Squat", "Step Up", "Burpee"]
     
@@ -47,6 +47,7 @@ struct HistoryView: View {
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryView(showHistory: .constant(true))
+      HistoryView(showHistory: .constant(true))
+        .environmentObject(HistoryStore())
     }
 }

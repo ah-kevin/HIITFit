@@ -2,7 +2,8 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var selectedTab = 9
-    
+    @EnvironmentObject var history: HistoryStore
+
     var body: some View {
         TabView (selection: $selectedTab ) {
             WelcomeView(selectedTab: $selectedTab)
@@ -13,6 +14,7 @@ struct ContentView: View {
             }
             HistoryView(showHistory: .constant(true))
         }
+        .environmentObject(HistoryStore())
         .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
     }
 }

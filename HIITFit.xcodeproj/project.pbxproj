@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1882A429F6BFD000EF4924 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1882A329F6BFD000EF4924 /* TimerView.swift */; };
 		0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C411B29F41799004624F9 /* ExerciseView.swift */; };
 		0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0529F562070046DBFA /* RatingView.swift */; };
 		0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A1882A329F6BFD000EF4924 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0A3C411B29F41799004624F9 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
 		0AD8BB0529F562070046DBFA /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIdeoPlayerView.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
+				0A1882A329F6BFD000EF4924 /* TimerView.swift */,
 				0AD8BB0929F566810046DBFA /* HistoryView.swift */,
 				0A3C411B29F41799004624F9 /* ExerciseView.swift */,
 				0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */,
@@ -220,6 +223,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1882A429F6BFD000EF4924 /* TimerView.swift in Sources */,
 				0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */,
 				0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */,
 				C30B6D3C29F522170079579E /* HeaderView.swift in Sources */,

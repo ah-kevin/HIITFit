@@ -13,10 +13,10 @@ struct Exercise {
   let videoName: String
 
   enum ExerciseEnum: String {
-    case squat = "Squat"
-    case stepUp = "Step Up"
-    case burpee = "Burpee"
-    case sunSalute = "Sun Salute"
+    case squat = "深蹲"
+    case stepUp = "上台阶"
+    case burpee = "波比跳"
+    case sunSalute = "瑜伽"
   }
 }
 
