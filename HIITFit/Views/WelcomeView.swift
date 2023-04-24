@@ -8,13 +8,20 @@
 
 import SwiftUI
 
-struct HellloView: View {
+struct WelcomeView: View {
+    @Binding var selectedTab : Int
+    @State private var showHistory = false
     var body: some View {
       ZStack {
         VStack {
-          HeaderView(titleText: "Welcome")
+          HeaderView(selectedTab: $selectedTab, titleText: "Welcome")
           Spacer()
-          Button("History"){}
+          Button("History"){
+              showHistory.toggle()
+          }
+          .sheet(isPresented: $showHistory) {
+            HistoryView(showHistory: $showHistory)
+          }
             .padding(.bottom)
         }
         VStack {
@@ -29,7 +36,7 @@ struct HellloView: View {
               .resizedToFill(width: 240, height: 240)
               .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
           }
-          Button(action: { }) {
+          Button(action: { selectedTab  = 0}) {
 //            Label("Get Started", systemImage: "arrow.right.circle")
             Text("Get Started")
             Image(systemName: "arrow.right.circle")
@@ -38,16 +45,16 @@ struct HellloView: View {
           .padding()
           .background(
             RoundedRectangle(cornerRadius: 20)
-            .stroke(Color.gray, lineWidth: 2))
-
+            .stroke(Color.gray, lineWidth: 2)
+          )
         }
 
       }
     }
 }
 
-struct HellloView_Previews: PreviewProvider {
+struct WelcomeView_Previews: PreviewProvider {
     static var previews: some View {
-        HellloView()
+        WelcomeView(selectedTab: .constant(9))
     }
 }

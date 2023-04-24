@@ -14,7 +14,7 @@
 		0AD8BB2B29F57AC30046DBFA /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB2A29F57AC30046DBFA /* HistoryStore.swift */; };
 		0AD8BB2D29F57CDA0046DBFA /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB2C29F57CDA0046DBFA /* HistoryStoreDevData.swift */; };
 		0AD8BB2F29F58A390046DBFA /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB2E29F58A390046DBFA /* SuccessView.swift */; };
-		C3026A5A29F545ED00E2D082 /* HellloView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3026A5929F545ED00E2D082 /* HellloView.swift */; };
+		C3026A5A29F545ED00E2D082 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3026A5929F545ED00E2D082 /* WelcomeView.swift */; };
 		C30B6D3C29F522170079579E /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3B29F522170079579E /* HeaderView.swift */; };
 		C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30B6D3D29F5249C0079579E /* Exercise.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
@@ -37,7 +37,7 @@
 		0AD8BB2A29F57AC30046DBFA /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		0AD8BB2C29F57CDA0046DBFA /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
 		0AD8BB2E29F58A390046DBFA /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
-		C3026A5929F545ED00E2D082 /* HellloView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HellloView.swift; sourceTree = "<group>"; };
+		C3026A5929F545ED00E2D082 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		C30B6D3B29F522170079579E /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C30B6D3D29F5249C0079579E /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,7 +74,7 @@
 				0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */,
 				0AD8BB0529F562070046DBFA /* RatingView.swift */,
 				C30B6D3B29F522170079579E /* HeaderView.swift */,
-				C3026A5929F545ED00E2D082 /* HellloView.swift */,
+				C3026A5929F545ED00E2D082 /* WelcomeView.swift */,
 				0AD8BB2E29F58A390046DBFA /* SuccessView.swift */,
 			);
 			path = Views;
@@ -232,7 +232,7 @@
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
 				C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */,
-				C3026A5A29F545ED00E2D082 /* HellloView.swift in Sources */,
+				C3026A5A29F545ED00E2D082 /* WelcomeView.swift in Sources */,
 				CD30C94025147A8C0049DB93 /* ImageExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,7 +366,7 @@
 				DEVELOPMENT_TEAM = FMD93864NK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HIITFit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -388,7 +388,7 @@
 				DEVELOPMENT_TEAM = FMD93864NK;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HIITFit/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
