@@ -1,0 +1,22 @@
+# .gitignore for Xcode projects
+
+# macOS generated files
+.DS_Store
+
+# Xcode userdata
+*.xcuserdatad
+*.xcuserdata
+
+# Build results and intermediate files
+*.xctestrun
+*.xcresult
+*.moved-aside
+DerivedData
+Build/
+
+# Carthage and CocoaPods dependencies
+Carthage/
+Pods/
+
+# Swift Package Manager
+*.swiftpm

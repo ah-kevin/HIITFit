@@ -68,7 +68,7 @@ struct ExerciseView: View {
           )
         }
         Spacer()
-        RatingView(rating: $rating) // Move RatingView below Spacer
+        RatingView(exerciseIndex: index)
           .padding()
         Spacer()
         Button("History") {
