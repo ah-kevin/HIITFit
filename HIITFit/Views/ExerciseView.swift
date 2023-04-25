@@ -5,6 +5,7 @@ struct ExerciseView: View {
   @EnvironmentObject var history: HistoryStore
   @State private var rating = 0
   @State private var showSuccess = false
+    @State private var showHistory = false
   @State private var timerDone = false
   @State private var showTimer = false
   
@@ -70,7 +71,12 @@ struct ExerciseView: View {
         RatingView(rating: $rating) // Move RatingView below Spacer
           .padding()
         Spacer()
-        Button("History") { }
+        Button("History") {
+            showHistory.toggle()
+        }
+        .sheet(isPresented: $showHistory, content: {
+            HistoryView(showHistory: $showHistory)
+        })
           .padding(.bottom)
       }
     }
