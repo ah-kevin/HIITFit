@@ -18,18 +18,8 @@ struct HistoryView: View {
                 Text("histroy")
                     .font(.title)
                     .padding()
-                Form {
-                    ForEach(history.exerciseDays) { day in
-                        Section(
-                            header:
-                            Text(day.date.formatted(as: "MMM d"))
-                                .font(.headline))
-                        {
-                            ForEach(day.exercises, id: \.self) { exercise in
-                                Text(exercise)
-                            }
-                        }
-                    }
+                List($history.exerciseDays, editActions: [.delete]) { $day in
+                    dayView(day: day)
                 }
             }
             Button(action: { showHistory.toggle() }) {
@@ -37,6 +27,18 @@ struct HistoryView: View {
             }
             .font(.title)
             .padding()
+        }
+        .onDisappear {
+            try? history.save()
+        }
+    }
+
+    func dayView(day: ExerciseDay) -> some View {
+        DisclosureGroup {
+//            exerciseView(day: day)
+        } label: {
+            Text(day.date.formatted(as: "d MMM YYYY"))
+                .font(.headline)
         }
     }
 }
