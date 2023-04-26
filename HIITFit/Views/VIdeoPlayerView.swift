@@ -9,24 +9,22 @@
 import SwiftUI
 import AVKit
 
-struct VIdeoPlayerView: View {
-  let exercise : Exercise
-  let height : CGFloat
+struct VideoPlayerView: View {
+  let videoName: String
   var body: some View {
-    if let url = Bundle.main.url(forResource: exercise.videoName, withExtension: "mp4"){
+    if let url = Bundle.main.url(
+      forResource: videoName,
+      withExtension: "mp4") {
       VideoPlayer(player: AVPlayer(url: url))
-        .frame(height:height)
-        .clipShape(RoundedRectangle(cornerRadius: 12))
-        .padding(20)
     } else {
-      Text("Couldn't find \(exercise.videoName).mp4")
+      Text("Couldn’t find \(videoName).mp4")
         .foregroundColor(.red)
     }
   }
 }
 
-struct VIdeoPlayerView_Previews: PreviewProvider {
+struct VideoPlayerView_Previews: PreviewProvider {
   static var previews: some View {
-    VIdeoPlayerView(exercise: Exercise(exerciseName: "Squat", videoName: "squat"),height: 200)
+    VideoPlayerView(videoName: "squat")
   }
 }

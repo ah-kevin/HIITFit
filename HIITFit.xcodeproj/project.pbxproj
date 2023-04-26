@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		0A1882A429F6BFD000EF4924 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1882A329F6BFD000EF4924 /* TimerView.swift */; };
 		0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C411B29F41799004624F9 /* ExerciseView.swift */; };
+		0A83E2DD29F952A800C35DB8 /* AddHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E2DC29F952A800C35DB8 /* AddHistoryView.swift */; };
+		0A83E2DF29F956D400C35DB8 /* BarChartDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E2DE29F956D400C35DB8 /* BarChartDayView.swift */; };
+		0A83E2E129F957FB00C35DB8 /* BarChartWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E2E029F957FB00C35DB8 /* BarChartWeekView.swift */; };
+		0A83E2E329F95BC300C35DB8 /* IndentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83E2E229F95BC300C35DB8 /* IndentView.swift */; };
 		0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0529F562070046DBFA /* RatingView.swift */; };
-		0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */; };
+		0AD8BB0829F563120046DBFA /* VideoPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0729F563120046DBFA /* VideoPlayerView.swift */; };
 		0AD8BB0A29F566810046DBFA /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB0929F566810046DBFA /* HistoryView.swift */; };
 		0AD8BB2B29F57AC30046DBFA /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB2A29F57AC30046DBFA /* HistoryStore.swift */; };
 		0AD8BB2D29F57CDA0046DBFA /* HistoryStoreDevData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8BB2C29F57CDA0046DBFA /* HistoryStoreDevData.swift */; };
@@ -40,8 +44,12 @@
 /* Begin PBXFileReference section */
 		0A1882A329F6BFD000EF4924 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		0A3C411B29F41799004624F9 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		0A83E2DC29F952A800C35DB8 /* AddHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHistoryView.swift; sourceTree = "<group>"; };
+		0A83E2DE29F956D400C35DB8 /* BarChartDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartDayView.swift; sourceTree = "<group>"; };
+		0A83E2E029F957FB00C35DB8 /* BarChartWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartWeekView.swift; sourceTree = "<group>"; };
+		0A83E2E229F95BC300C35DB8 /* IndentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndentView.swift; sourceTree = "<group>"; };
 		0AD8BB0529F562070046DBFA /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
-		0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VIdeoPlayerView.swift; sourceTree = "<group>"; };
+		0AD8BB0729F563120046DBFA /* VideoPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerView.swift; sourceTree = "<group>"; };
 		0AD8BB0929F566810046DBFA /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
 		0AD8BB2A29F57AC30046DBFA /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
 		0AD8BB2C29F57CDA0046DBFA /* HistoryStoreDevData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStoreDevData.swift; sourceTree = "<group>"; };
@@ -84,13 +92,15 @@
 		0A3C411D29F41D7E004624F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A83E2DB29F9529400C35DB8 /* HistoryViews */,
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
 				0A1882A329F6BFD000EF4924 /* TimerView.swift */,
+				0A83E2E229F95BC300C35DB8 /* IndentView.swift */,
 				0AD8BB0929F566810046DBFA /* HistoryView.swift */,
 				0A3C411B29F41799004624F9 /* ExerciseView.swift */,
 				C31491AB29F9004A00AAEF74 /* ContainerView.swift */,
 				C31491A929F8D90100AAEF74 /* EmbossedButton.swift */,
-				0AD8BB0729F563120046DBFA /* VIdeoPlayerView.swift */,
+				0AD8BB0729F563120046DBFA /* VideoPlayerView.swift */,
 				0AD8BB0529F562070046DBFA /* RatingView.swift */,
 				C30B6D3B29F522170079579E /* HeaderView.swift */,
 				C3026A5929F545ED00E2D082 /* WelcomeView.swift */,
@@ -100,6 +110,16 @@
 				C31491B129F9135D00AAEF74 /* WelcomeImage.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0A83E2DB29F9529400C35DB8 /* HistoryViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A83E2DC29F952A800C35DB8 /* AddHistoryView.swift */,
+				0A83E2DE29F956D400C35DB8 /* BarChartDayView.swift */,
+				0A83E2E029F957FB00C35DB8 /* BarChartWeekView.swift */,
+			);
+			path = HistoryViews;
 			sourceTree = "<group>";
 		};
 		0AD8BB2929F57A970046DBFA /* Model */ = {
@@ -252,10 +272,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A83E2DF29F956D400C35DB8 /* BarChartDayView.swift in Sources */,
 				C31491AC29F9004A00AAEF74 /* ContainerView.swift in Sources */,
 				0A1882A429F6BFD000EF4924 /* TimerView.swift in Sources */,
 				0A3C411C29F41799004624F9 /* ExerciseView.swift in Sources */,
-				0AD8BB0829F563120046DBFA /* VIdeoPlayerView.swift in Sources */,
+				0AD8BB0829F563120046DBFA /* VideoPlayerView.swift in Sources */,
 				C30B6D3C29F522170079579E /* HeaderView.swift in Sources */,
 				C31491B029F9090600AAEF74 /* GradientBackground.swift in Sources */,
 				CD30C926251474DC0049DB93 /* ContentView.swift in Sources */,
@@ -267,8 +288,11 @@
 				0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */,
 				0AD8BB0A29F566810046DBFA /* HistoryView.swift in Sources */,
 				CD30C93F25147A8C0049DB93 /* DateExtension.swift in Sources */,
+				0A83E2E329F95BC300C35DB8 /* IndentView.swift in Sources */,
 				C31491A429F77AE400AAEF74 /* BTPrint.swift in Sources */,
 				CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */,
+				0A83E2DD29F952A800C35DB8 /* AddHistoryView.swift in Sources */,
+				0A83E2E129F957FB00C35DB8 /* BarChartWeekView.swift in Sources */,
 				C31491AA29F8D90100AAEF74 /* EmbossedButton.swift in Sources */,
 				C30B6D3E29F5249C0079579E /* Exercise.swift in Sources */,
 				C3026A5A29F545ED00E2D082 /* WelcomeView.swift in Sources */,

@@ -16,37 +16,25 @@ extension Date {
         return dateFormatter.string(from: self)
     }
 
-    /// Check another date is the same year, month and day.
-    ///   - parameters:
-    ///     - day: The other date.
-    func isSameDay(as day: Date) -> Bool {
-        return self.yearMonthDay == day.yearMonthDay
-    }
+  /// Check another date is the same year, month and day.
+   ///   - parameters:
+   ///     - day: The other date.
+   func isSameDay(as day: Date) -> Bool {
+     return self.yearMonthDay == day.yearMonthDay
+   }
 
-    var dayName: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEEE"
-        return dateFormatter.string(from: self)
-    }
+   var dayName: String {
+     let dateFormatter = DateFormatter()
+     dateFormatter.dateFormat = "EEEE"
+     return dateFormatter.string(from: self)
+   }
 
-    var truncatedDayName: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "EEE"
-        return dateFormatter.string(from: self)
-    }
-
-    var truncatedDayMonth: String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "dd MMM"
-        return dateFormatter.string(from: self)
-    }
-
-    var lastSevenDays: [Date] {
-        (-6 ... 0).map { day in
-            Calendar.current.date(
-                byAdding: .day,
-                value: day,
-                to: Date()) ?? Date()
-        }
-    }
+   var previousSevenDays: [Date] {
+     (-6...0).map { day in
+       Calendar.current.date(
+         byAdding: .day,
+         value: day,
+         to: self) ?? Date()
+     }
+   }
 }
