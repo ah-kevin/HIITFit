@@ -9,45 +9,43 @@
 import SwiftUI
 
 struct HistoryView: View {
-    @Binding var showHistory : Bool
-    @EnvironmentObject var history:HistoryStore
-    let today = Date()
-    let yesterday = Date().addingTimeInterval(-86400)
-    let exercises1 = ["Squat", "Step Up", "Burpee", "Sun Salute"]
-    let exercises2 = ["Squat", "Step Up", "Burpee"]
-    
+    @Binding var showHistory: Bool
+    @EnvironmentObject var history: HistoryStore
+
     var body: some View {
-        ZStack(alignment: .topTrailing){
+        ZStack(alignment: .topTrailing) {
             VStack {
                 Text("histroy")
                     .font(.title)
                     .padding()
-                Form {
-                    ForEach(history.exerciseDays) { day in
-                        Section(
-                            header:
-                                Text(day.date.formatted(as: "MMM d"))
-                                .font(.headline)) {
-                                    ForEach(day.exercises,id:\.self){ exercise in
-                                        Text(exercise)
-                                    }
-                                }
-                    }
+                List($history.exerciseDays, editActions: [.delete]) { $day in
+                    dayView(day: day)
                 }
-                
             }
-            Button(action: {showHistory.toggle()}) {
+            Button(action: { showHistory.toggle() }) {
                 Image(systemName: "xmark.circle")
             }
             .font(.title)
             .padding()
+        }
+        .onDisappear {
+            try? history.save()
+        }
+    }
+
+    func dayView(day: ExerciseDay) -> some View {
+        DisclosureGroup {
+//            exerciseView(day: day)
+        } label: {
+            Text(day.date.formatted(as: "d MMM YYYY"))
+                .font(.headline)
         }
     }
 }
 
 struct HistoryView_Previews: PreviewProvider {
     static var previews: some View {
-      HistoryView(showHistory: .constant(true))
-        .environmentObject(HistoryStore())
+        HistoryView(showHistory: .constant(true))
+            .environmentObject(HistoryStore())
     }
 }
