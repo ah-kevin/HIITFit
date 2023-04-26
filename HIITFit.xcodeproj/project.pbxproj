@@ -24,7 +24,7 @@
 		C31491AA29F8D90100AAEF74 /* EmbossedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31491A929F8D90100AAEF74 /* EmbossedButton.swift */; };
 		C31491AC29F9004A00AAEF74 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31491AB29F9004A00AAEF74 /* ContainerView.swift */; };
 		C31491B029F9090600AAEF74 /* GradientBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31491AF29F9090600AAEF74 /* GradientBackground.swift */; };
-		C31491B229F9135D00AAEF74 /* WlecomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31491B129F9135D00AAEF74 /* WlecomeImage.swift */; };
+		C31491B229F9135D00AAEF74 /* WelcomeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C31491B129F9135D00AAEF74 /* WelcomeImage.swift */; };
 		CD30C924251474DC0049DB93 /* HIITFitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C923251474DC0049DB93 /* HIITFitApp.swift */; };
 		CD30C926251474DC0049DB93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD30C925251474DC0049DB93 /* ContentView.swift */; };
 		CD30C928251474DD0049DB93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD30C927251474DD0049DB93 /* Assets.xcassets */; };
@@ -55,7 +55,7 @@
 		C31491A929F8D90100AAEF74 /* EmbossedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbossedButton.swift; sourceTree = "<group>"; };
 		C31491AB29F9004A00AAEF74 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		C31491AF29F9090600AAEF74 /* GradientBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientBackground.swift; sourceTree = "<group>"; };
-		C31491B129F9135D00AAEF74 /* WlecomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WlecomeImage.swift; sourceTree = "<group>"; };
+		C31491B129F9135D00AAEF74 /* WelcomeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeImage.swift; sourceTree = "<group>"; };
 		CD30C920251474DC0049DB93 /* HIITFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HIITFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD30C923251474DC0049DB93 /* HIITFitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIITFitApp.swift; sourceTree = "<group>"; };
 		CD30C925251474DC0049DB93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,7 +97,7 @@
 				C31491AF29F9090600AAEF74 /* GradientBackground.swift */,
 				C31491A729F8CF6F00AAEF74 /* RaisedButton.swift */,
 				0AD8BB2E29F58A390046DBFA /* SuccessView.swift */,
-				C31491B129F9135D00AAEF74 /* WlecomeImage.swift */,
+				C31491B129F9135D00AAEF74 /* WelcomeImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -262,7 +262,7 @@
 				0AD8BB2B29F57AC30046DBFA /* HistoryStore.swift in Sources */,
 				0AD8BB2D29F57CDA0046DBFA /* HistoryStoreDevData.swift in Sources */,
 				0AD8BB2F29F58A390046DBFA /* SuccessView.swift in Sources */,
-				C31491B229F9135D00AAEF74 /* WlecomeImage.swift in Sources */,
+				C31491B229F9135D00AAEF74 /* WelcomeImage.swift in Sources */,
 				C31491A629F77B0B00AAEF74 /* PrintFormat.swift in Sources */,
 				0AD8BB0629F562070046DBFA /* RatingView.swift in Sources */,
 				0AD8BB0A29F566810046DBFA /* HistoryView.swift in Sources */,
