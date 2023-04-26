@@ -92,10 +92,9 @@
 		0A3C411D29F41D7E004624F9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0A83E2E429F95D2100C35DB8 /* TimerViews */,
 				0A83E2DB29F9529400C35DB8 /* HistoryViews */,
 				CD30C925251474DC0049DB93 /* ContentView.swift */,
-				0A1882A329F6BFD000EF4924 /* TimerView.swift */,
-				0A83E2E229F95BC300C35DB8 /* IndentView.swift */,
 				0AD8BB0929F566810046DBFA /* HistoryView.swift */,
 				0A3C411B29F41799004624F9 /* ExerciseView.swift */,
 				C31491AB29F9004A00AAEF74 /* ContainerView.swift */,
@@ -120,6 +119,15 @@
 				0A83E2E029F957FB00C35DB8 /* BarChartWeekView.swift */,
 			);
 			path = HistoryViews;
+			sourceTree = "<group>";
+		};
+		0A83E2E429F95D2100C35DB8 /* TimerViews */ = {
+			isa = PBXGroup;
+			children = (
+				0A1882A329F6BFD000EF4924 /* TimerView.swift */,
+				0A83E2E229F95BC300C35DB8 /* IndentView.swift */,
+			);
+			path = TimerViews;
 			sourceTree = "<group>";
 		};
 		0AD8BB2929F57A970046DBFA /* Model */ = {

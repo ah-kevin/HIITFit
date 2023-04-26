@@ -37,9 +37,8 @@ struct HistoryView: View {
 
   func dayView(day: ExerciseDay) -> some View {
     DisclosureGroup {
-//      exerciseView(day: day)
-//        .deleteDisabled(true)
       BarChartDayView(day: day)
+        .deleteDisabled(true)
     } label: {
       Text(day.date.formatted(as: "d MMM YYYY"))
         .font(.headline)
@@ -61,20 +60,21 @@ struct HistoryView: View {
             .font(.title)
         } else {
           headerView
-            .padding()
         }
       }
-
+      .padding()
       List($history.exerciseDays, editActions: [.delete]) { $day in
         dayView(day: day)
       }
       if addMode {
         AddHistoryView(addMode: $addMode)
           .background(Color.primary.colorInvert()
-          .shadow(color: .primary.opacity(0.5), radius: 7))
+            .shadow(color: .primary.opacity(0.5), radius: 7))
       }
     }
-    .onDisappear { try? history.save() }
+    .onDisappear {
+      try? history.save()
+    }
   }
 }
 
