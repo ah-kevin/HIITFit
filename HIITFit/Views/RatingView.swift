@@ -13,7 +13,7 @@ struct RatingView: View {
     @State private var rating = 0
     let maximumRating = 5
 
-    let onColor = Color.red
+    let onColor = Color("ratings")
     let offColor = Color.gray
 
     // 1
@@ -50,7 +50,7 @@ struct RatingView: View {
                     Image(systemName: "waveform.path.ecg")
                         .foregroundColor(
                             index > rating ? offColor : onColor)
-                        .font(.body)
+                        .font(.headline)
                 })
                 .buttonStyle(EmbossedButtonStyle(buttonShape: .round))
                 .onChange(of: ratings) { _ in
@@ -78,6 +78,7 @@ struct RatingView_Previews: PreviewProvider {
     static var previews: some View {
         ratings = nil
         return RatingView(exerciseIndex: 0)
+//            .preferredColorScheme(.dark)
             .previewLayout(.sizeThatFits)
     }
 }

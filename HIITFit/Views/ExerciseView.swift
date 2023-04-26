@@ -54,10 +54,10 @@ struct ExerciseView: View {
                         titleText: Exercise.exercises[index].exerciseName
                     )
                     .padding(.bottom)
-                    
+                    Spacer()
                     ContainerView {
                         VStack {
-                            VIdeoPlayerView(exercise: exercise, height: geometry.size.height * 0.45)
+                            VIdeoPlayerView(exercise: exercise, height: geometry.size.height * 0.3)
                             HStack(spacing: 150) {
                                 startButton
                                 doneButton
@@ -81,11 +81,12 @@ struct ExerciseView: View {
                                 .padding(.bottom)
                         }
                     }
+                    .frame(height: geometry.size.height * 0.8)
                 }
             }
         }
     }
-    
+   
     var historyButton: some View {
         Button(
             action: {
@@ -103,7 +104,7 @@ struct ExerciseView: View {
 
 struct ExerciseView_Previews: PreviewProvider {
     static var previews: some View {
-        ExerciseView(selectedTab: .constant(3), index: 3)
+        ExerciseView(selectedTab: .constant(1), index: 3)
             .environmentObject(HistoryStore())
     }
 }

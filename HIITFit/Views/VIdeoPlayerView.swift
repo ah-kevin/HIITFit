@@ -16,6 +16,8 @@ struct VIdeoPlayerView: View {
     if let url = Bundle.main.url(forResource: exercise.videoName, withExtension: "mp4"){
       VideoPlayer(player: AVPlayer(url: url))
         .frame(height:height)
+        .clipShape(RoundedRectangle(cornerRadius: 12))
+        .padding(20)
     } else {
       Text("Couldn't find \(exercise.videoName).mp4")
         .foregroundColor(.red)
